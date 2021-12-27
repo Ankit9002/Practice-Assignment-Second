@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>no predefined methods</title>
+</head>
+<body>
+    <script>
+        function indexOfMax(arr) {
+            if (arr.length === 0) {
+                return -1;
+            }
+
+            var max = arr[0];
+            var maxIndex = 0;
+
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    maxIndex = i;
+                    max = arr[i];
+                }
+            }
+
+            return maxIndex;
+        }
+        const arr = [3, 5, 8, 100, 20];
+        getInd = indexOfMax(arr)
+        
+        console.log(arr);
+        console.log(arr[getInd]);
+    </script>
+    
+</body>
+</html>

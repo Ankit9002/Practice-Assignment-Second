@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>REDUCE METHOD</title>
+</head>
+<body>
+    <script>
+    var a = [3, 5, 8, 100, 20];
+        var indexOfMaxValue = a.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
+         console.log(a);
+         console.log(a[indexOfMaxValue]);
+         console.log(indexOfMaxValue);
+        </script>
+          
+</body>
+</html>

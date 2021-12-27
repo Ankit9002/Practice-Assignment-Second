@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    const concatenateFunction = (...arr) => {
+        const arrLen = arr.length;
+        if (arrLen === 1) {
+          return [...arr[0], ...arr[0]];
+        }
+        for (var i = 0; i < arrLen; i++) {
+          return [...arr[0], ...arr[1]];
+        }
+      };
+      
+      console.log(concatenateFunction([1, 2, 3, 4], [2, 3, 4, 5, 6, 7, 8]));
+    </script>
+</body>
